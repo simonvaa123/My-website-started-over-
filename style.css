@@ -1,8 +1,11 @@
 body{
+  color:white;
 padding: 0;
 margin: 0;
 border: 0;
 font-family: sans-serif;
+background-image: url("bilder/frontpage.png");
+background-size:cover;
 }
 .tophead1{
 width: 100%;
@@ -13,6 +16,11 @@ margin: 0;
 
 #navbar{
   background-color: #ff4622;
+}
+
+.lolbox img {
+  width:100%;
+  heigh:auto;
 }
 
 .navtab{
@@ -61,11 +69,16 @@ color: #585757;
 font-weight: bolder;
 }
 .bigbanner1{
+  max-width: 1040px; /* största tillåtna bredd på lådan */
+  min-width: 260px;
+  padding: 16px; /* Indrag, ge luft runt innehållet i lådan. */
+  border-radius:20px; /* Effekt för att ge avrundadwe hörn. */
+  background-color: rgba(0,0,000,0.5); /* En färg med genomskinlighet (sista värdet) */
+  display: block;
+  margin-left: auto; /* Centrering av lådan.  */
+  margin-right: auto;
 width: 100%;
-height: 1250px;
-background-image: url("bilder/frontpage.png");
-padding-top: 30%;
-background-size:cover;
+height: 250px;
 
 }
 .bigbanner1 h3{
@@ -74,6 +87,7 @@ text-align: center;
 font-size: 70px;
 font-weight: lighter;
 color: #fff;
+padding-top: 30%;
 }
 .containergrid{
 margin-top: 20px;
